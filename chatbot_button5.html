@@ -49,7 +49,7 @@ font-size: 72px;
         embedded_svc.settings.externalStyles = ['DM Sans'];
 
         embedded_svc.init(
-            'https://myconad2021--developmen.my.salesforce.com',
+            'https://myconad2021--developmen.sandbox.lightning.force.com',
             'https://developmen-conaddevelop.cs100.force.com/liveAgentSetupFlow',
             gslbBaseURL,
             '00D1x0000008eLM',
@@ -68,7 +68,7 @@ font-size: 72px;
 
     if (!window.embedded_svc) {
         var s = document.createElement('script');
-        s.setAttribute('src', 'https://myconad2021--developmen.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+        s.setAttribute('src', 'https://myconad2021--developmen.sandbox.lightning.force.com/embeddedservice/5.0/esw.min.js');
         s.onload = function() {
             initESW(null);
         };
@@ -87,7 +87,7 @@ font-size: 72px;
         embedded_svc.menu.chat.settings.paramUserId = "";
 
         embedded_svc.menu.init(
-            'https://myconad2021--developmen.my.salesforce.com',
+            'https://myconad2021--developmen.sandbox.lightning.force.com',
             'https://d.la1-c1cs-fra.salesforceliveagent.com/chat',
             gslbBaseURL,
             '00D1x0000008eLM',
@@ -101,7 +101,7 @@ font-size: 72px;
 
     if (!window.embedded_svc || !window.embedded_svc.menu) {
         var s = document.createElement('script');
-        s.setAttribute('src', 'https://myconad2021--developmen.my.salesforce.com/embeddedservice/menu/fab.min.js');
+        s.setAttribute('src', 'https://myconad2021--developmen.sandbox.lightning.force.com/embeddedservice/menu/fab.min.js');
         s.onload = function() {
             initESW(null);
         };
@@ -112,7 +112,7 @@ font-size: 72px;
   </script>
   
   
-   <script src="https://myconad2021--developmen.my.salesforce.com/lightning/lightning.out.js"></script>
+   <script src="https://myconad2021--developmen.sandbox.lightning.force.com/lightning/lightning.out.js"></script>
     <script type='text/javascript'>
    $Lightning.use("c:myAuraApp", function() {
         $Lightning.createComponent("c:helloWorld", {

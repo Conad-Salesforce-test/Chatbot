@@ -35,7 +35,7 @@
         embedded_svc.settings.entryFeature = 'LiveAgent';
 
         embedded_svc.init(
-            'https://myconad2021--developmen.my.salesforce.com',
+            'https://myconad2021--developmen.sandbox.lightning.force.com',
             'https://developmen-conad.cs174.force.com/liveAgentSetupFlow',
             gslbBaseURL,
             '00D7Z0000004sdh',
@@ -53,7 +53,7 @@
 
     if (!window.embedded_svc) {
         var s = document.createElement('script');
-        s.setAttribute('src', 'https://myconad2021--developmen.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+        s.setAttribute('src', 'https://myconad2021--developmen.sandbox.lightning.force.com/embeddedservice/5.0/esw.min.js');
         s.onload = function() {
             initESW(null);
         };
